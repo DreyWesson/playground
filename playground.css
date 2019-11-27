@@ -1,0 +1,66 @@
+* {
+    padding: 5px;
+    margin: 5px;
+}
+
+body {
+    font-family: monospace;
+}
+
+p {
+    background-color: rgb(114, 57, 114);
+    color: white;
+    font-size: 30px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    padding: 5px 0 0 15px;
+}
+
+div > p {
+    background-color: rgb(209, 112, 209);
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 15px;
+    border: 3px solid rgb(209, 112, 209);
+}
+
+#greatSpecificity {
+    background-color: violet;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+#notSoClose {
+    color: rgb(75, 75, 223);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* margin: 30px 0 0 30px; */
+    padding: 50px 0 0 30px;
+}
+
+ul {
+    color: rgb(209, 112, 209);
+    font-size: 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    background-color: rgb(139, 108, 108);
+    color: white;
+    border-bottom: 3px solid rgb(114, 57, 114);
+    width: 113px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    position: fixed;
+    top: 200px;
+    left: 110px;
+    background-color: rgb(79, 79, 248);
+    border: 2px solid rgb(79, 79, 248);
+    box-sizing: 20px
+}
