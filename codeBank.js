@@ -83,12 +83,15 @@ function floattr(floats, regex) {
 
 }
 const fetchHashtags = (/#\w+/gi);
-const tweets = "#hashtag the#wesson hgfftbcbcb #bfhfggggd lagos/aa-411-lsd abuja/xyz-101-ab";
-floattr(tweets, fetchHashtags);
 const plateNumberMatch = (/#?[a-z]{3,13}[-/:]?[a-z]{2,3}[-/:]?\d{3}[-/:]?[a-z]{2,3}/gi);
 const slipperyPlateMatch = (/#?[a-z]{3,13}[-/:][a-z]{2,3}\d{3}[a-z]{2,3}/gi);
-floattr(tweets, plateNumberMatch);
 
-let newPlate = "nassarawa/bde345xe jos:bd345xee nassarawa-bde345xe #weGotThis"
-floattr(newPlate, slipperyPlateMatch);
+const floats = `#hashtag #drey the#wesson 
+                this piece of code will scrape out 
+                the hashtags, time and platenumbers
+                in every float lagos/aa-411-lsd 
+                abuja/xyz-101-ab jos:bd345xee`;
+floattr(floats, fetchHashtags);
+floattr(floats, plateNumberMatch);
+
 
