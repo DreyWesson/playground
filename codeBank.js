@@ -72,9 +72,9 @@ function removeHashtags(params) {
 
 
 //fetch the hashtags in a tweet 
-function test(text, regex) {
-  if (regex.test(text)) {
-    let result =text.match(regex);
+function floattr(floats, regex) {
+  if (regex.test(floats)) {
+    let result =floats.match(regex);
     // console.log(`It's a match`);
     console.log(result)
     return result.forEach(tag => console.log(tag));
@@ -84,11 +84,11 @@ function test(text, regex) {
 }
 const fetchHashtags = (/#\w+/gi);
 const tweets = "#hashtag the#wesson hgfftbcbcb #bfhfggggd lagos/aa-411-lsd abuja/xyz-101-ab";
-test(tweets, fetchHashtags);
+floattr(tweets, fetchHashtags);
 const plateNumberMatch = (/#?[a-z]{3,13}[-/:]?[a-z]{2,3}[-/:]?\d{3}[-/:]?[a-z]{2,3}/gi);
 const slipperyPlateMatch = (/#?[a-z]{3,13}[-/:][a-z]{2,3}\d{3}[a-z]{2,3}/gi);
-test(tweets, plateNumberMatch);
+floattr(tweets, plateNumberMatch);
 
 let newPlate = "nassarawa/bde345xe jos:bd345xee nassarawa-bde345xe #weGotThis"
-test(newPlate, slipperyPlateMatch);
+floattr(newPlate, slipperyPlateMatch);
 
