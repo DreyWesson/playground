@@ -48,7 +48,7 @@ function vc(params) {
   let vowelsCount = params.match(/[aeiou]/gi);
   return vowelsCount === null ? 0 : vowelsCount.length;
 }
-console.log(vc('hello world'));
+// console.log(vc('hello world'));
 
 
 function doesArrayContainZero(params) {
@@ -68,5 +68,14 @@ function isInteger(params) {
 function removeHashtags(params) {
   return params.startsWith('#')? params.slice(1) : params;
 }
-console.log(removeHashtags('#rideShare'))
+// console.log(removeHashtags('#rideShare'))
 
+
+//highlight the hashtag in a tweet 
+function test(text, regex) {
+  let result =text.match(regex);
+  return result.forEach(tag => console.log(tag));
+}
+const fetchHashtags = (/#\w+/g);
+const tweets = "#hashtag #wesson hgfftbcbcb #bfhfggggd";
+test(tweets, fetchHashtags);
