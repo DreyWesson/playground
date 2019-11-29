@@ -71,11 +71,19 @@ function removeHashtags(params) {
 // console.log(removeHashtags('#rideShare'))
 
 
-//highlight the hashtag in a tweet 
+//fetch the hashtags in a tweet 
 function test(text, regex) {
-  let result =text.match(regex);
-  return result.forEach(tag => console.log(tag));
+  if (regex.test(text)) {
+    let result =text.match(regex);
+    // console.log(`It's a match`);
+    console.log(result)
+    return result.forEach(tag => console.log(tag));
+  } else
+    console.log('No match found');
+
 }
-const fetchHashtags = (/#\w+/g);
-const tweets = "#hashtag #wesson hgfftbcbcb #bfhfggggd";
+const fetchHashtags = (/#\w+/gi);
+const tweets = "#hashtag thhh#wesson hgfftbcbcb #bfhfggggd lagos/aa-411-lsd abuja/xyz-101-ab";
 test(tweets, fetchHashtags);
+const plateNumberMatch = (/#?[a-z]{3,13}[-/][a-z]{2,3}[-/]\d{3}[-/][a-z]{2,3}/gi);
+test(tweets, plateNumberMatch);
