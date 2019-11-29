@@ -83,7 +83,12 @@ function test(text, regex) {
 
 }
 const fetchHashtags = (/#\w+/gi);
-const tweets = "#hashtag thhh#wesson hgfftbcbcb #bfhfggggd lagos/aa-411-lsd abuja/xyz-101-ab";
+const tweets = "#hashtag the#wesson hgfftbcbcb #bfhfggggd lagos/aa-411-lsd abuja/xyz-101-ab";
 test(tweets, fetchHashtags);
-const plateNumberMatch = (/#?[a-z]{3,13}[-/][a-z]{2,3}[-/]\d{3}[-/][a-z]{2,3}/gi);
+const plateNumberMatch = (/#?[a-z]{3,13}[-/:]?[a-z]{2,3}[-/:]?\d{3}[-/:]?[a-z]{2,3}/gi);
+const slipperyPlateMatch = (/#?[a-z]{3,13}[-/:][a-z]{2,3}\d{3}[a-z]{2,3}/gi);
 test(tweets, plateNumberMatch);
+
+let newPlate = "nassarawa/bde345xe jos:bd345xee nassarawa-bde345xe #weGotThis"
+test(newPlate, slipperyPlateMatch);
+
