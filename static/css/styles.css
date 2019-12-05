@@ -15,6 +15,7 @@
 }
 
 .container-1, .container-2,
+.container-github-repo,
 .container-3, .container-4,
 .container-5, .container-x{
   border: 1px solid black;
@@ -48,6 +49,22 @@
 
 }
 
+.container-github-repo img {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+
+}
+/* .container-github-repo h4 {
+  color: #657786;
+} */
+.container-github-repo span {
+  color: green;
+}
+.container-github-repo span#repo-result {
+  color: #657786;
+}
+
 .flex-box-rps img{
   width: 200px;
   height: 200px;
@@ -60,15 +77,6 @@
   box-shadow: 0 10px 50px #657786;
 }
 
-#won {
-  color: #28a745;
-}
-#loss {
-  color: #dc3545;
-}
-#tie {
-  color: #657786;
-}
 
 .flex-blackjack-row-1{
   background: url('https://previews.dropbox.com/p/thumb/AAoRi153pCAzA0THg6Y8bjK54Rxrjtm3IhFXC_DIaUcKCZIHajxL1lYkZ8yjxHTp_YnNadYE_b9Bd4NE0cK0525n9Pr-PsWSdi7ci2iEd952zbeYlfnukactTwhHQKHqLdWvMBmuDJfeNdsta94MX9o2sm4vSgokaAb1eDwofl8E3YNfJqKq82-BrGEnSI9bHwtPXW0gkniQufz9F3dL9mD-tqj5rz77oBzIbFw21TRwa0Bk0TfEimbejQUGTW3un-XfZQrQkOcxd0G-so7bUdoz1DlONAg6Ne0sQshqzGpHPFYzmpXuB0Pm_lDn2FLA8CMzpUmptFEkikBj3wcAtrDw/p.jpeg?size=2048x1536&size_mode=3')center;
@@ -117,12 +125,12 @@ table, th, td {
   
  }
 
- #add-mood{
+ #add-mood, #fetch-repo{
   width: 370px;
   margin: 0 auto;
 }
 
-#add-mood input{
+#add-mood input, #fetch-repo input{
   display: block;
   margin: 0px auto;
   padding: 10px;
@@ -134,7 +142,7 @@ table, th, td {
   float: left;
 }
 
-#add-mood button{
+#add-mood button, #fetch-repo button{
   padding: 10px 20px;
   display: block;
   margin: 0;
@@ -146,7 +154,7 @@ table, th, td {
 
 }
 
-#add-mood:after{
+#add-mood:after, #fetch-repo:after{
   content: '';
   display: block;
   clear: both;
